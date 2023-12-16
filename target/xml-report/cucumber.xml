@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.938">
+    <testcase classname="JDBC03 Kullanici database'de update yapabilmeli" name="TC03 kullanici id degeri ile istedigi soyismi update ettigini test eder" time="1.852">
+        <failure message="expected:&lt;[happiness]&gt; but was:&lt;[Pymar]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given Kullanici JDBC ile database'e baglanir................................passed
+Then id degeri 14 olan kisinin "last_name" degerini "happiness" yapar.......passed
+And id si 14 olan kisinin "last_name" degerinin "happiness" oldugunu test eder.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[happiness]> but was:<[Pymar]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at databaseStepdefinitions.UsersStepdefinitions.idSiOlanKisininDegerininOldugunuTestEder(UsersStepdefinitions.java:119)
+	at ✽.id si 14 olan kisinin "last_name" degerinin "happiness" oldugunu test eder(file:///Users/ahmetbulutluoz/Desktop/com.CucumberFall2022/src/test/resources/features/JDBC03_updateTesti.feature:7)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
